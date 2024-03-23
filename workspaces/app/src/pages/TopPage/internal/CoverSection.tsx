@@ -5,6 +5,8 @@ import { Link } from '../../../foundation/components/Link';
 import { Text } from '../../../foundation/components/Text';
 import { Color, Radius, Space, Typography } from '../../../foundation/styles/variables';
 
+// import { HeroImage } from './HeroImage';
+
 const _Wrapper = styled.div`
   width: calc(100% + ${Space * 4}px);
   margin-left: -${Space * 2}px;
@@ -30,6 +32,7 @@ const _SearchLink = styled(Link)`
 export const CoverSection: React.FC = () => {
   return (
     <_Wrapper>
+      {/* <HeroImage /> */}
       <_SearchLink href="/search">
         <SvgIcon color={Color.MONO_A} height={24} type="Search" width={24} />
         <Text color={Color.MONO_A} typography={Typography.NORMAL16}>
